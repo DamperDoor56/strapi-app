@@ -13,11 +13,15 @@ Simply click this [link](strapi-data.up.railway.app) and there you go! You succe
 Let's start with cloning this repository 
 
 ### Prerequisites
-- For the strapi version I used to build this project, you need to use **NodeJS: v16.x.x** 
+ For the strapi version I used to build this project, you need to have this versions:
 
-- Also don't forget about using **npm: v6.x.x**, if you use yarn, it's ok!
+| Strapi | Node | npm|
+| ------ | ------ |  ------|
+|     v4.0.8   |     v16.x.x   |  v6.x.x|
 
+If you use yarn, every version is good!
 
+### Cloning
 On GitHub.com, navigate to the main page of the repository. Above the list of files, click Code.
 
 ![alt text](https://docs.github.com/assets/cb-20363/images/help/repository/code-button.png)
@@ -59,4 +63,17 @@ yarn develop
 ```
 Yay :tada: you're now in strapi locally!
 
-### This project is under construction :construction:
+![alt-image-window](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674081982/imagen_2023-01-18_194620654_puzjhg.png)
+
+Put /admin in the link or the localhost, and log in or register ;)
+
+![alt-image-strapi-admin](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674082156/imagen_2023-01-18_194914112_jpjxju.png)
+
+Congratulations! You're in the main page!
+
+![strapi-main](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674082248/imagen_2023-01-18_195046488_loveqn.png)
+
+You can browse freely the content manager section, and the content type builder. You can even create your own schema and watch the changes on the database!
+
+
+ This project is under construction :construction:
