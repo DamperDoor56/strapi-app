@@ -1,57 +1,60 @@
-# 🚀 Getting started with Strapi
+# Welcome to this project :tada:
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html) (CLI) which lets you scaffold and manage your project in seconds.
+Hey there! Thank you for passing by, in this README I'll explain everything you need to know about strapi, how to dump and restore the database, so please, have a coffe and read calmly :) 
 
-### `develop`
+# Getting started
+![alt-text](https://repository-images.githubusercontent.com/43441403/97069080-d012-11ea-9317-a871d5105486)
+## With deploy 
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-develop)
+Simply click this [link](strapi-data.up.railway.app) and there you go! You successfully entered to strapi :D You're very smart!
+
+## With cloning
+
+Let's start with cloning this repository 
+
+### Prerequisites
+- For the strapi version I used to build this project, you need to use **NodeJS: v16.x.x** 
+
+- Also don't forget about using **npm: v6.x.x**, if you use yarn, it's ok!
+
+
+On GitHub.com, navigate to the main page of the repository. Above the list of files, click Code.
+
+![alt text](https://docs.github.com/assets/cb-20363/images/help/repository/code-button.png)
+
+Copy the URL for the repository, open Git Bash. Change the current working directory to the location where you want the cloned directory.
+
+```
+$cd desktop
+
+```
+Type git clone, and then paste the URL you copied earlier.
+```
+$ git clone https://gitlab.com/LudmiDev/cms.git
+
+```
+Press Enter to create your local clone.
+
+```
+$ git clone https://gitlab.com/LudmiDev/cms.git
+> Cloning into `desktop`...
+> remote: Counting objects: 10, done.
+> remote: Compressing objects: 100% (8/8), done.
+> remove: Total 10 (delta 1), reused 10 (delta 1)
+> Unpacking objects: 100% (10/10), done.
+```
+Then, put npm install, to install all the dependencies
+
+```
+npm install 
+# or 
+yarn add 
+```
+Then, put npm run develop to watch the project in your localhost
 
 ```
 npm run develop
-# or
-yarn develop
 ```
+Yay :tada: you're now in strapi locally!
 
-### `start`
-
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-start)
-
-```
-npm run start
-# or
-yarn start
-```
-
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/developer-docs/latest/developer-resources/cli/CLI.html#strapi-build)
-
-```
-npm run build
-# or
-yarn build
-```
-
-## ⚙️ Deployment
-
-Strapi gives you many possible deployment options for your project. Find the one that suits you on the [deployment section of the documentation](https://docs.strapi.io/developer-docs/latest/setup-deployment-guides/deployment.html).
-
-## 📚 Learn more
-
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://docs.strapi.io) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
-
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
-
-## ✨ Community
-
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
-
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+### This project is under construction :construction:
