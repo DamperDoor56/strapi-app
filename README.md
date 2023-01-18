@@ -54,6 +54,8 @@ Then, put npm run develop to watch the project in your localhost
 
 ```
 npm run develop
+# or
+yarn develop
 ```
 Yay :tada: you're now in strapi locally!
 
