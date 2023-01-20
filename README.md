@@ -2,17 +2,18 @@
 
 Hey there! Thank you for passing by, in this README I'll explain everything you need to know about strapi, how to dump and restore the database, so please, have a coffe and read calmly :) 
 
-# Getting started
+# Getting started :zap:
 ![alt-text](https://repository-images.githubusercontent.com/43441403/97069080-d012-11ea-9317-a871d5105486)
-## With deploy 
 
-Simply click this [link](strapi-data.up.railway.app) and there you go! You successfully entered to strapi :D You're very smart!
+## With deploy :rocket:
 
-## With cloning
+Simply click this [Link](https://strapi-data.up.railway.app) and there you go! You successfully entered to strapi :D You're very smart!
+
+## With cloning :busts_in_silhouette:
 
 Let's start with cloning this repository 
 
-### Prerequisites
+### Prerequisites :wrench:
  For the strapi version I used to build this project, you need to have this versions:
 
 | Strapi | Node | npm|
@@ -21,7 +22,7 @@ Let's start with cloning this repository
 
 If you use yarn, every version is good!
 
-### Cloning
+### Cloning :busts_in_silhouette:
 On GitHub.com, navigate to the main page of the repository. Above the list of files, click Code.
 
 ![alt text](https://docs.github.com/assets/cb-20363/images/help/repository/code-button.png)
@@ -75,5 +76,102 @@ Congratulations! You're in the main page!
 
 You can browse freely the content manager section, and the content type builder. You can even create your own schema and watch the changes on the database!
 
+# Getting started with the Database :card_file_box:
+This part is not easy, but I'll do my best to help you.
+First of all, you need to install **PostgreSQL**, [this link](https://www.postgresql.org/download/) will take you to the download page.
 
- This project is under construction :construction:
+Also you need to install **pgAdmin 4**, here's the [download link](https://www.pgadmin.org/download/).
+
+Nice job! You're alredy made half the labor!
+
+## pgAdmin 4 :construction_worker:
+Open up pgAdmin, and make a new server
+
+![pgAdminphoto](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674232449/Captura_uzguzv.png)
+
+In the name of the server, you can put whatever you want, be creative! But on these fields, you need to put this information.
+The data is listed here:
+
+- host: containers-us-west-127.railway.app
+- password: PGMl5pgjp6INsFiN4lw1
+- port: 7876
+
+
+![pgAdminServer](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674232681/asasas_cixbwh.png)
+
+There you go! You have now access to the database, you can browse the tables freely :)
+
+![pgAdminDB](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674232875/pasoaps_l4coeq.png)
+
+# How to backup the database? :thinking_face:
+
+In order to make a backup of the database, first we need to make a **dump**. 
+What is a dump? Is an output of data that can help us to back up the database. 
+
+So let's get hands on this!
+I'm gonna assume you're a windows user, so first of all, we got to execute CMD as administrator
+
+![cmd](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674233752/open-cmd-with-admin-rights_bgmvqy.png)
+
+Then, you need to travel by cd to the bin folder of the PostgreSQL folder, like this!
+![cmdtravel](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674233892/assaasassa_hfacme.png)
+
+You can copy the code to make this proccess easier
+
+
+```
+cd ..
+
+cd ..
+
+cd "Program Files"
+
+cd PostgreSQL
+
+cd 15
+
+cd bin
+```
+Well done! Now we need to write this command: 
+
+```
+pg_dump -U postgres -W -h containers-us-west-127.railway.app -p 7876 railway > <name of the dump :) >.sql
+
+```
+And then, is gonna ask you the password, if you forgot it, there you have it ;)
+```
+PGMl5pgjp6INsFiN4lw1
+
+```
+
+If you travel to 
+```C:\Program Files\PostgreSQL\15\bin```
+you'll notice that the dump was successfully created.
+
+![pros](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674234433/assasssss_jl2djn.png)
+
+Well done! You made your dump :D
+
+# Making a backup database with the dump data
+
+Ok with this dump we made, we can finally back up our database into another one.
+First, we open pgAdmin 4 again, and we'll create a database.
+
+![database](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674234797/asasassdffgg_vwoant.png)
+
+Put it a cool name, and then, we'll move on to CMD
+
+We'll open CMD as admin again, and browse to get to ```C:\Program Files\PostgreSQL\15\bin```
+and put this command
+
+```
+psql -h containers-us-west-127.railway.app -p 7876 -U postgres -f <nameOfDump>.sql <name-of-database-you-just-created>
+```
+Wait a little bit, and :
+
+![pgadmindb](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674235017/nice_done_gw0vqh.png)
+
+Well done! You successfully restored data from the dump, and made a cool backup! :D
+
+
+
