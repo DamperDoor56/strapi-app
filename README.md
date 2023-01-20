@@ -114,6 +114,8 @@ I'm gonna assume you're a windows user, so first of all, we got to execute CMD a
 ![cmd](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674233752/open-cmd-with-admin-rights_bgmvqy.png)
 
 Then, you need to travel by cd to the bin folder of the PostgreSQL folder, like this!
+
+
 ![cmdtravel](https://res.cloudinary.com/dweiaqd6l/image/upload/v1674233892/assaasassa_hfacme.png)
 
 You can copy the code to make this proccess easier
