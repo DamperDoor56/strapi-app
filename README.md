@@ -154,7 +154,7 @@ you'll notice that the dump was successfully created.
 
 Well done! You made your dump :D
 
-# Making a backup database with the dump data
+# Making a backup database with the dump data :hammer:
 
 Ok with this dump we made, we can finally back up our database into another one.
 First, we open pgAdmin 4 again, and we'll create a database.
