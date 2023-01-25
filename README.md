@@ -7,7 +7,7 @@ Hey there! Thank you for passing by, in this README I'll explain everything you 
 
 ## With deploy :rocket:
 
-Simply click this [Link](https://strapi-data.up.railway.app) and there you go! You successfully entered to strapi :D You're very smart!
+Simply click this [Link](https://strapi-app-production-099a.up.railway.app/) and there you go! You successfully entered to strapi :D You're very smart!
 
 ## With cloning :busts_in_silhouette:
 
@@ -18,7 +18,7 @@ Let's start with cloning this repository
 
 | Strapi | Node | npm|
 | ------ | ------ |  ------|
-|     v4.0.8   |     v16.x.x   |  v6.x.x|
+|     v4.3.8   |     v16.x.x   |  v6.x.x|
 
 If you use yarn, every version is good!
 
