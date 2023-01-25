@@ -35,13 +35,13 @@ $cd desktop
 ```
 Type git clone, and then paste the URL you copied earlier.
 ```
-$ git clone https://gitlab.com/LudmiDev/cms.git
+$ git clone https://gitlab.com/LudmiDev/strapi-app.git
 
 ```
 Press Enter to create your local clone.
 
 ```
-$ git clone https://gitlab.com/LudmiDev/cms.git
+$ git clone https://gitlab.com/LudmiDev/strapi-app.git
 > Cloning into `desktop`...
 > remote: Counting objects: 10, done.
 > remote: Compressing objects: 100% (8/8), done.
